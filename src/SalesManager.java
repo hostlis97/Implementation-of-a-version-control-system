@@ -28,9 +28,9 @@ public class SalesManager {
     public long avg() {
         long avg = 0;
         for (long sale : sales) {
-            avg +=sale;
+            avg += sale;
         }
-        avg = (avg-this.max()-this.min())/(sales.length-2);
+        avg = (avg - this.max() - this.min()) / (sales.length - 2);
         return avg;
     }
 }
