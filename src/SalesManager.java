@@ -15,9 +15,9 @@ public class SalesManager {
         return max;
     }
 
-    public int min() {
-        int min = this.max();
-        for (int sale : sales) {
+    public long min() {
+        long min = this.max();
+        for (long sale : sales) {
             if (sale < min) {
                 min = sale;
             }
@@ -25,9 +25,9 @@ public class SalesManager {
         return min;
     }
 
-    public int avg() {
-        int avg = 0;
-        for (int sale : sales) {
+    public long avg() {
+        long avg = 0;
+        for (long sale : sales) {
             avg +=sale;
         }
         avg = (avg-this.max()-this.min())/(sales.length-2);
